@@ -1,0 +1,158 @@
+body {
+    height: 96.3vh;
+    /* background: linear-gradient(rgb(255, 255, 255), rgb(114, 215, 165)); */
+    /* background: linear-gradient(rgb(255, 255, 255), #97BC62); */
+    background: linear-gradient(rgb(255, 255, 255), #662549);
+    /* background: url('/css/bg.jpg') no-repeat center center/cover fixed; */
+}
+
+h1 {
+    margin-top: 12px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    height: 50px;
+    width: 50px;
+    mix-blend-mode: multiply;
+    margin-top: 15px;
+}
+
+.container {
+    max-width: 950px;
+    border: 2px solid black;
+    margin: auto;
+    height: 50vh;
+    padding: 33px;
+    overflow-y: auto;
+    margin-bottom: 23px;
+    border-radius: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    /* background-color: #CBD18F; */
+    background: url('/css/bg.jpg') no-repeat center center/cover;
+    opacity: 0.8;
+}
+
+.message {
+    /* background-color: rgb(176, 170, 170); */
+    width: 24%;
+    padding: 10px;
+    margin: 17px 12px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.left {
+    float: left;
+    clear: both;
+    /* background-color: rgb(167, 167, 229); */
+    background-color: #ADD8E6;
+    /* background-color: rgb(98, 98, 209); */
+    /* background-color: rgb(156, 213, 156); */
+}
+
+.right {
+    float: right;
+    clear: both;
+    background-color: rgb(156, 213, 156);
+    /* background-color:  #CCF381; */
+    /* background-color: #fff; */
+}
+
+#send-container {
+    display: block;
+    margin: auto;
+    text-align: center;
+    max-width: 1031px;
+    width: 100%;
+}
+
+#messageInp {
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 6px;
+    height: 35px;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    padding-left: 15px;
+    background: linear-gradient(rgb(255, 255, 255), #ddc3d1);
+}
+
+.btn {
+    padding: 8px;
+    border-radius: 6px;
+    border: 2px solid black;
+    cursor: pointer;
+    width: 8%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    background: linear-gradient(rgb(255, 255, 255), #ddc3d1);
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        height: 65vh;
+        margin: 8px;
+    }
+
+    body {
+        height: 98vh;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .container {
+        height: 65vh;
+        margin: 8px;
+    }
+
+    body {
+        height: 98vh;
+    }
+}
+
+@media only screen and (max-width: 414px) and (min-width: 390px){
+    .container {
+        height: 60vh;
+        margin: 8px;
+    }
+
+    body {
+        height: 98vh;
+    }
+
+    #messageInp {
+        width: 70%;
+    }
+
+    .btn {
+        width: 15%;
+    }
+}
+
+@media only screen and (max-width: 375px) and (min-width: 360px){
+    .container {
+        height: 50vh;
+        margin: 3px;
+    }
+
+    body {
+        height: 98vh;
+    }
+
+    #messageInp {
+        width: 70%;
+    }
+
+    .btn {
+        width: 18%;
+    }
+}
